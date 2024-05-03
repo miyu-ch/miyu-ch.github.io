@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
     font-size: 16px;
-    color: white;
+    --text: #d4be98;
+    --background: #282828;
+    --primary: #d397b0;
+    --secondary: #97c6d3;
+    --accent: #d39797;
 }
 body::-webkit-scrollbar
 {
@@ -19,14 +23,15 @@ body::-webkit-scrollbar-thumb
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Inter", sans-serif;
     list-style-type: none;
     text-decoration: none;
+    cursor: default;
 }
 
 body {
-    background-color: #282828; /* Dark mode background color */
-    color: #d4be98; /* Dark mode text color */
+    background-color: var(--background); /* Dark mode background color */
+    color: var(--text); /* Dark mode text color */
 }
 header {
     margin-top: 10vh;
@@ -47,8 +52,7 @@ section {
     text-underline-offset: 1vh;
 }
 #color {
-    color: rgb(255, 0, 179);
-    color: #e14dee;
+    color: var(--primary);
 }
 li {
     margin-bottom: 2vh;
