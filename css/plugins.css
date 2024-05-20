@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root {
+    font-size: 16px;
+    --text: #d4be98;
+    --background: #282828;
+    --lighter: rgba(114, 103, 85, 0.404);
+    --primary: #d397b0;
+    --secondary: #97c6d3;
+    --accent: #d39797;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.plugin-card {
+    background-color: var(--lighter);
+    color: var(--text);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.plugin-pfp {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.plugin-name {
+    font-size: 2em;
+    color: var(--accent);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.plugin-description {
+    font-size: 1em;
+}
+#official {
+    background-color: var(--lighter);
+    font-size: 0.29em;
+    border-radius: 100px;
+}
