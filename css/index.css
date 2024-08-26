@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    font-size : clamp(0.7rem, 1.5vw, 1.5rem);
+    --text: #000000;
+    --background: #ffefdf;
+    --background_darker: #ebdbcc2c;
+    --primary: #e8778a;
+    --secondary: #893846;
+    --accent: #ef9aa4;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    cursor: default;
+}
+body::-webkit-scrollbar
+{
+    width: 0.5rem;
+}
+body::-webkit-scrollbar-track
+{
+    background: var(--background);
+}
+body::-webkit-scrollbar-thumb
+{
+    background: var(--accent);
+}
+
+p {
+    text-align: left;
+    line-height: 4vh;
+}
+
+body {
+    background-color: var(--background);
+}
+body > h1 {
+    text-align: center;
+    color: var(--secondary);
+}
+
+.container-header {
+    color: var(--primary);
+    margin-top: 30vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60vh;
+}
+#pfp {
+    border-radius: 120px;
+}
+#proud_dorothy {
+    width: 20vw;
+    margin-left: 10%;
+}
+h3 {
+    color: var(--accent);
+    text-decoration: underline 3px;
+    text-underline-offset: 1vh;
+}
+
+section {
+    text-align: center;
+    background-color: var(--background_darker);
+    margin-bottom: 60vh;
+}
+.container-first {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#highlight {
+    color: var(--primary);
+}
+footer {
+    opacity: 0.3;
+    background-color: #beb1a425;
+    text-align: center;
+    line-height: 4vh;
+}
+.container-buttons {
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.invite-button {
+    padding: 1vw;
+    color: var(--primary);
+    border: 4px solid var(--primary);
+    transition: 0.2s;
+}
+.invite-button:hover {
+    transition: 0.2s;
+    padding: 1vw;
+    border: 4px solid var(--primary);
+    color: var(--background);
+    background-color: var(--primary);
+}
+
+#wip:hover {
+    cursor: not-allowed;
+}
+h5 {
+    text-align: center;
+    opacity: 0.5;
+    color: var(--accent);
+    margin-top: 15vh;
+    margin-bottom: 60vh;
+}
